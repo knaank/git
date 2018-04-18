@@ -57,3 +57,36 @@ git clone  git@github.com:knaank/gitskills.git
 git checkout -b 分支名称
 #创建分支并切换分支
 
+git checkout 分支名称
+#切换分支
+
+git branch
+#查看当前分支
+
+git merge 分支名称
+#把当前分支与指定分支合并
+
+git branch -d 分支名称
+#删除指定分支
+
+git log --graph --pretty=oneline --abbrev-commit
+#显示分支的不同路线图，防止冲突
+
+git merge --no-ff -m “XXX” 分支名称
+#用普通合并，保留分支历史
+
+git stash
+#隐藏当前工作现场
+
+git stash list
+#查看工作现场表
+
+git stash pop
+#弹出保存的工作现场，并删除
+
+git stash apply
+#恢复工作现场
+
+git stashfrop
+#删除工作现场
+
