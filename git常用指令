@@ -39,7 +39,7 @@ git checkout -- filename
 git rm filename
 #删除仓库中的文件
 
-git remote add repository_name git@githu.com.xxx
+git remote add repository_name git@githu.com.xxx   https://github.com/knaank/clone_git
 #增加一个远程仓库在github中
 
 git remote remove repository_name
@@ -47,3 +47,13 @@ git remote remove repository_name
 
 git push -u repository_name master
 #推送本地仓库到远程仓库上，-u是用第一次推送远程仓库
+
+git push repository_name master
+#推送当前提交的文件到远程仓库上
+
+git clone  git@github.com:knaank/gitskills.git
+#从远程仓库中克隆一份数据仓
+
+git checkout -b 分支名称
+#创建分支并切换分支
+
