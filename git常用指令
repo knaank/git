@@ -90,3 +90,26 @@ git stash apply
 git stashfrop
 #删除工作现场
 
+git tag 标签名称
+#打标签
+
+git tag
+#查看所有标签
+
+git tag -a v0.1 -m "version 0.1 released" 3628164
+#创建带有说明的标签，用-a指定标签名，-m指定说明文字
+
+git tag -d 标签名称
+#删除标签
+
+git push 远程仓库名称 标签名称
+#把本地的标签推送到远程仓库
+
+git push 远程仓库名称 --tag
+#推送所有标签到远程仓库
+
+git push origin :refs/tags/<tagname>
+#删除远程标签
+
+git add -f App.class
+#强制提交某文件
