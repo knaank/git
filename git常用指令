@@ -1,0 +1,49 @@
+git常用指令
+
+git config --global user.name "xxx"
+#指定git仓库用户
+
+git confit --global user.email "xxx@xxx.com"
+#指定git仓库用户的邮箱
+
+git init
+#git仓库初始化，当前路径
+
+gid add filename
+#把文件传至暂存区
+
+git commit -m "xxx"
+#把文件提交至仓库，后接修改描述
+
+git status
+#查看当前仓库的状态，是否存在相关修改
+
+git diff filename
+#查看暂存区的修改与版本仓库的不同处
+
+git log
+#查看文件的修改日志
+
+git log --pretty=oneline
+#查看文件的修改日期，按行格式显示
+
+git reset --hard commit id
+#让文件回到commit id的指定版本
+
+git reflog
+#在命令行输入的指令历史记录
+
+git checkout -- filename
+#把文件恢复到最近一次commit或add的状态。
+
+git rm filename
+#删除仓库中的文件
+
+git remote add repository_name git@githu.com.xxx
+#增加一个远程仓库在github中
+
+git remote remove repository_name
+#移出远程仓库
+
+git push -u repository_name master
+#推送本地仓库到远程仓库上，-u是用第一次推送远程仓库
